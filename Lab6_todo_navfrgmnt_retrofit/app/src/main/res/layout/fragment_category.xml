@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/category_business"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="business"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/category_entertainment"
+        />
+
+    <Button
+        android:id="@+id/category_entertainment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="entertainment"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/category_business"
+        app:layout_constraintBottom_toTopOf="@id/category_general"
+        />
+
+    <Button
+        android:id="@+id/category_general"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="general"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/category_entertainment"
+        app:layout_constraintBottom_toTopOf="@id/category_health"
+        />
+
+    <Button
+        android:id="@+id/category_health"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="health"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/category_general"
+        app:layout_constraintBottom_toTopOf="@id/category_science"
+        />
+
+    <Button
+        android:id="@+id/category_science"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="science"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/category_health"
+        app:layout_constraintBottom_toTopOf="@id/category_sports"
+        />
+
+    <Button
+        android:id="@+id/category_sports"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="sports"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/category_science"
+        app:layout_constraintBottom_toTopOf="@id/category_technology"
+        />
+
+    <Button
+        android:id="@+id/category_technology"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="technology"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/category_sports"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
